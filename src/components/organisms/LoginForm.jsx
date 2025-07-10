@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FilledLockIcon } from "../atoms/icons/FilledLockIcon";
 import { FilledPersonIcon } from "../atoms/icons/FilledPersonIcon";
 import { RoundInputField } from "../molecules/RoundInputField";
 import { PillButton } from "../atoms/PillButton";
@@ -15,13 +14,13 @@ import { PasswordInput } from "../molecules/PasswordInput";
 
 export function LoginForm() {
     return (
-        <AuthCard title="Selamat Datang Kembali" description="Tolong login ke akun kamu dulu">
-            <div className="mb-6">
-                <RoundInputField icon={<FilledPersonIcon size={24} />} inputName="username" placeholder="Username" />
-            </div>
-            <div className="mb-6">
-                <PasswordInput />
-            </div>
+    <AuthCard title="Selamat Datang Kembali" description="Tolong login ke akun kamu dulu">
+        <div className="mb-6">
+            <RoundInputField icon={<FilledPersonIcon size={24} />} inputName="username" placeholder="Username" />
+        </div>
+        <div className="mb-6">
+            <PasswordInput />
+        </div>
             <div className="flex justify-between mt-10">
                 <RemembermeCheckbox />
                 <Link href="" className="text-blue-500">Lupa password?</Link>

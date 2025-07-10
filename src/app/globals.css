@@ -1,7 +1,11 @@
 @import "tailwindcss";
+
 @plugin "daisyui" {
   themes: light --default, dark --prefer;
-};
+}
+
+@plugin "@tailwindcss/typography";
+@config "./../../tailwind.conifg.js";
 
 :root {
   --background: #ffffff;
@@ -33,6 +37,7 @@ body {
     transform: translateY(0px) rotate(0deg);
     opacity: 1;
   }
+
   to {
     transform: translateY(-400dvh) rotate(720deg);
     opacity: 0;
@@ -44,8 +49,11 @@ body {
     transform: translateY(-20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0px);
     opacity: 1;
   }
 }
+
+.ProseMirror:focus { outline: none; }
